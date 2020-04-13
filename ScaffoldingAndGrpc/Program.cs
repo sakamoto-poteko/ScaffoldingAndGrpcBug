@@ -12,7 +12,7 @@ namespace ScaffoldingAndGrpc
 {
     public class Program
     {
-        public static Greeter.GreeterClient Useless { get; set; }
+        public static Greeter2.Greeter2Client Useless { get; set; }
 
         public static void Main(string[] args)
         {
@@ -28,7 +28,7 @@ namespace ScaffoldingAndGrpc
 
         public static void GrpcOutOfTreeProtoDef()
         {
-            Useless = new Greeter.GreeterClient(GrpcChannel.ForAddress("invalid"));
+            Useless = new Greeter2.Greeter2Client(GrpcChannel.ForAddress("invalid"));
         }
     }
 }
